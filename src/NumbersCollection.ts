@@ -5,11 +5,11 @@ export class NumbersCollection {
     return this.data.length;
   }
 
-  compare(right: number, left: number): boolean {
+  compare(left: number, right: number): boolean {
     return this.data[right] < this.data[left];
   }
 
-  swap(right: number, left: number): void {
+  swap(left: number, right: number): void {
     [this.data[right], this.data[left]] = [this.data[left], this.data[right]];
   }
 }

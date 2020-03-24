@@ -11,10 +11,10 @@ var NumbersCollection = /** @class */ (function () {
         enumerable: true,
         configurable: true
     });
-    NumbersCollection.prototype.compare = function (right, left) {
+    NumbersCollection.prototype.compare = function (left, right) {
         return this.data[right] < this.data[left];
     };
-    NumbersCollection.prototype.swap = function (right, left) {
+    NumbersCollection.prototype.swap = function (left, right) {
         var _a;
         _a = [this.data[left], this.data[right]], this.data[right] = _a[0], this.data[left] = _a[1];
     };
